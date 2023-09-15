@@ -12,4 +12,16 @@ public class ConfigApp {
 
         return new FullTimeMentor();
     }
+    @Bean(name = "p1") // gives name to the bean
+    PartTimeMentor PartTimeMentor(){
+
+        return new PartTimeMentor();
+    }
+    @Bean(name = "p2")
+    PartTimeMentor PartTimeMentor2(){
+
+        return new PartTimeMentor();
+    }
+    // whenever create the beans
+    // Rule: needs to create a method which is returning object that wanted
 }
