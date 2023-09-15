@@ -7,6 +7,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+    // add Lombok dependency
 public class Car {
     private String make;
+
 }
