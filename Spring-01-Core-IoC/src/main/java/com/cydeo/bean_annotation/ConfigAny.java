@@ -11,7 +11,6 @@ public class ConfigAny {
         return "Developer";
     }
 
-
     @Bean
     Integer number(){
         return 100;

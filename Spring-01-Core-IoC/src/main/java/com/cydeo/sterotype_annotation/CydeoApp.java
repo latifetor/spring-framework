@@ -24,6 +24,5 @@ public class CydeoApp {
         context.getBean(Java.class).getTeachingHours(); // Total teaching hours : 250
 
 
-
     }
 }
