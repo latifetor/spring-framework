@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("PUSH")
+@Qualifier("PUSH") // custom_name
 public class CommentPushNotificationProxy implements CommentNotificationProxy{
     @Override
     public void sendComment(Comment comment) {

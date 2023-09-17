@@ -14,7 +14,8 @@ public class CommentService {
     private final CommentNotificationProxy commentNotificationProxy;
 
     // @Autowired : Rule: if there is only one Constructor in the class, does not need to annotated with @Autowired
-    public CommentService(CommentRepository commentRepository,CommentNotificationProxy commentNotificationProxy) {
+    public CommentService(CommentRepository commentRepository,
+                          @Qualifier("PUSH") CommentNotificationProxy commentNotificationProxy) {
         this.commentRepository = commentRepository;
         this.commentNotificationProxy = commentNotificationProxy;
     }
