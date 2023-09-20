@@ -1,5 +1,6 @@
 package com.cydeo.controller;
 
+import com.cydeo.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,6 +36,11 @@ public class StudentController {
         numbers.add(7);
         numbers.add(10);
         model.addAttribute("numbers",numbers);
+
+        // create student_object
+        // we can pass it to the template
+        Student student = new Student(1,"Mike","Smith");
+        model.addAttribute("student",student);
 
         return "/student/welcome"; //  thymeleaf_template without .html extension
     }
