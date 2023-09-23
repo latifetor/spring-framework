@@ -16,6 +16,7 @@
 <!--giving features to HTML tags or web_element page by using attribute and value
     adding features = it is adding additional information about the tag and the
     browser itself is running  -->
+<!--Input tag-->
 
 WELCOME:
 <b>Welcome to Java Developer Course</b>
@@ -51,21 +52,77 @@ WELCOME:
     </tr>
 </table>
 
-<ul></ul>
+<br>
+<label>Username:</label>
+<input type="text" name="username" id="username">
+
+<br>
+<lable>Password:</lable>
+<input type="password">
+
+<br>
+<lable>Enter your comments</lable>
+<textarea name ="comments"></textarea>
+
+<br>
+<label>Please select your gender</label>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="male">Female
+<input type="radio" name="gender" value="male">Other
+
+<label>Please select your favorite courses</label>
+<input type="checkbox" name="course" value="Spring">Spring
+<input type="checkbox" name="course" value="DS">DS
+<input type="checkbox" name="course" value="Java">Java
+
+<br>
+<label>Select your program</label>
+<select>
+    <option value="us_sdet">US SDET</option>
+    <option value="us_sdet">EU SDET</option>
+    <option value="us_jd">US JD</option>
+    <option value="JD_AL">US AL</option>
+</select>
+<br>
+<br>
+<form action="#" method="get">
+    Firstname: <input type="text" name="first_name">
+    <br>
+    <br>
+    Lastname: <input type="text" name="last_name">
+    <br>
+    <br>
+    <input type="button" value="submit">
+
+</form>
+<br>
+<br>
+<div style="background-color:cornflowerblue">
+<!--    putting every type of HTML_tags
+        and make Division having blue background
+        as only apply setting the colour for <div> not for the title
+        which grouping the web_elements and implement something to those
+        web_elements
+        basically creating the group on the page and applying the
+        setting for those group -->
+    <br>
+    <h3>JAVA DEVELOPER COURSE</h3>
+    <ul>
+        <li>SPRING</li>
+        <li>DATA STRUCTURE</li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
 </body>
 </html>
 
-<!-- cmd+? = comment in html.file using shortcut  -->
-<!-- cmd+s = saving the file and see some changes in the browser -->
-<!-- welcome without tag = plain text -->
-<!-- <p></p> = switching the paragraph -->
-<!-- <b></b> = bold text -->
-<!-- <h1></h1> to <h5></h5> = header with difference sizes -->
-<!-- <img src="" alt=""> = image by download into template.folder and displayed  -->
-<!-- <ul></ul> + <li></li> = list -->
-<!-- <a href=""></a> = link by providing the link -->
-<!-- <br> = putting the break on the table -->
-<!-- <table></table> = create simple web_table
-     <tr></tr> = row of the table
-     <td></td> = cell or data of the table
-     as a DEV will not create custom table but will copy from the platform-->
+
+
+
