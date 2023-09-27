@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/student")
 public class StudentController {
 
-    @RequestMapping(value = "/register")
-    //@GetMapping("/register")
+    //@RequestMapping(value = "/register",method = RequestMethod.GET)
+    @GetMapping("/register")
     public String register(Model model){
 
         model.addAttribute("students", DataGenerator.createStudent());
@@ -21,7 +21,8 @@ public class StudentController {
         return "student/register";
     }
 
-    @RequestMapping("/welcome")
+    //@RequestMapping("/welcome")
+    @GetMapping("/welcome")
     public String info(){
         return "student/welcome";
     }
