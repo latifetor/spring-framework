@@ -15,7 +15,6 @@ import java.util.List;
 @RequestMapping("/mentor")
 public class MentorController {
 
-
     @GetMapping("/register")
     public String showForm(Model model){
 
@@ -26,11 +25,12 @@ public class MentorController {
 
         return "mentor/mentor-register";
     }
-
     @PostMapping("/confirm")
     public String showForm2(@ModelAttribute("mentor") Mentor mentor){
 
-//        return "mentor/mentor-confirmation";
+        //System.out.println(mentor.toString()); // checking
+
+        // return "mentor/mentor-confirmation";
         return "redirect:/mentor/register";
     }
 
