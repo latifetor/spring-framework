@@ -1,6 +1,6 @@
 package com.cydeo.repository;
 
-public interface HourRepository {
+public interface HoursRepository {
 
     // create abstract_method
     int getHours();

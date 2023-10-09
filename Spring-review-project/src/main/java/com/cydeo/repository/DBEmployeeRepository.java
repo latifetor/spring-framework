@@ -10,7 +10,7 @@ public class DBEmployeeRepository implements EmployeeRepository{
     @Override
     public int getHourlyRate() {
 
-        Employee employee = new Employee("Jennifer","IT",70);
+        Employee employee = new Employee("Jennifer","IT",65);
         return employee.getHourlyRate();
     }
 }
