@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @Table(name = "user_account")
-public class User extends BaseEntity {
+public class User extends BaseEntity{
 
     private String email;
     private String password;
