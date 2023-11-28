@@ -2,6 +2,8 @@ package com.cydeo.repository;
 
 import com.cydeo.entity.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -25,4 +27,8 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
 
     // find all courses by category and returns a stream
     Stream<Course> streamByCategory(String category);
+
+    // @Query: Named Bind Parameters
+    @Query("SELECT c FROM Course c WHERE c.category = :category AND c.rating > :rating")
+    List<Course> findAllByCategoryAndRatingGreaterThan(@Param("category") String name, @Param("rating") int rating);
 }
