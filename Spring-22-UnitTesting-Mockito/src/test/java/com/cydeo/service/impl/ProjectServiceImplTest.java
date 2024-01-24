@@ -53,7 +53,7 @@ class ProjectServiceImplTest {
 
         Throwable exception = assertThrows(RuntimeException.class, () -> projectService.getByProjectCode("PR01"));
 
-//        verify(projectRepository).findByProjectCode(anyString());
+        verify(projectRepository).findByProjectCode(anyString());
 
         assertEquals("Project Not Found", exception.getMessage());
 
