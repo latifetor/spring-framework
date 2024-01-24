@@ -28,17 +28,17 @@ class ProjectServiceImplTest {
     @Test
     void getByProjectCode_test() {
 
-        // Given
+        // Given-part in BDD
         Project project = new Project();
         ProjectDTO projectDTO = new ProjectDTO();
 
         when(projectRepository.findByProjectCode(anyString())).thenReturn(project);
         when(projectMapper.convertToDto(project)).thenReturn(projectDTO);
 
-        // When
+        // When-part in BDD
         ProjectDTO projectDTO1 = projectService.getByProjectCode(anyString());
 
-        // Then
+        // Then-part in BDD
         verify(projectRepository).findByProjectCode(anyString());
         verify(projectMapper).convertToDto(any(Project.class));
 
