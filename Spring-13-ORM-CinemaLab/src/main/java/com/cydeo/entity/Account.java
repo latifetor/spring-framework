@@ -28,6 +28,9 @@ public class Account extends BaseEntity {
     @OneToOne(mappedBy = "account")
     private User user;
 
+// Remove toString() method avoid creating with the fields with the relation with the other entities
+// then Create a new toString without user_field
+
     @Override
     public String toString() {
         return "Account{" +
